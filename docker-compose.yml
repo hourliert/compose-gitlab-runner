@@ -2,6 +2,7 @@ version: '2'
 services:
   gitlab-runner:
     image: gitlab/gitlab-runner:latest
+    container_name: gitlab-runner
     restart: always
     networks:
       - back
